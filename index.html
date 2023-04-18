@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div><img class="logo-img" src="logo.png" alt="" /></div>
+        <div class="header-text">Weather Forecast</div>
+      </div>
+      <div class="search-bar">
+        <form onsubmit="handleSubmitForm(event)">
+          <input id="location-input" type="text" placeholder="Enter location" class="loc-input" />
+          <button type="submit"><i class="fa fa-search s-icon"></i></button>
+        </form>
+      </div>
+
+      <div class="detail-box">
+        <div class="cards-wrapper">
+          <div class="card-1">
+            <div class="card1-title">Temperature</div>
+            <div id="temp" class="card1-text">
+              Current Temperature 
+            </div>
+          </div>
+
+          <div class="card-2">
+            <div class="card2-title">Humidity</div>
+            <div id="humidity" class="card2-text">humidity</div>
+          </div>
+
+          <div class="card-3">
+            <div class="card3-title">Wind speed</div>
+            <div id="speed" class="card3-text">Speed of wind</div>
+          </div>
+
+          <div class="card-4">
+            <div class="card4-title">icon</div>
+            
+              <img id="icon">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-data">
+          <div>Copyright</div>
+          <div>2023 - Weather Forecast & Updates Pvt. Ltd</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
